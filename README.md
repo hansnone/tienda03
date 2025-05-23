@@ -18,7 +18,6 @@ Este proyecto es una tienda virtual desarrollada en PHP, que permite a los usuar
 
 La conexión se realiza mediante PDO, cargando los parámetros desde `conexion.properties` para mayor seguridad y flexibilidad.
 
-![**CAPTURA DE PANTALLA: CONEXIÓN A LA BASE DE DATOS (conexion.php líneas 1-22)](C:\Users\thebe\Pictures\Screenshots\Captura%20de%20pantalla%202025-05-20%20192417.png)
 
 ---
 
@@ -32,7 +31,6 @@ Se utiliza `session_start()` para mantener la sesión del usuario y almacenar el
 
 El registro valida que todos los campos estén completos, que el usuario y el correo no existan previamente, y almacena la contraseña de forma segura usando `password_hash`.
 
-![**CAPTURA DE PANTALLA: FORMULARIO DE REGISTRO (index.php líneas 122-146)**](C:\Users\thebe\Pictures\Screenshots\Captura%20de%20pantalla%202025-05-20%20192521.png)
 
 ---
 
@@ -40,7 +38,6 @@ El registro valida que todos los campos estén completos, que el usuario y el co
 
 El usuario puede iniciar sesión con su nombre de usuario y contraseña. Se verifica la contraseña usando `password_verify`.
 
-![**CAPTURA DE PANTALLA: FORMULARIO DE LOGIN (index.php líneas 108-118)**](C:\Users\thebe\Pictures\Screenshots\Captura%20de%20pantalla%202025-05-20%20192610.png)
 
 ---
 
@@ -51,9 +48,7 @@ El administrador accede con credenciales fijas y puede:
 - Añadir, editar y eliminar productos.
 - Ver y eliminar usuarios.
 
-![**CAPTURA DE PANTALLA: PANEL DE ADMINISTRACIÓN (index.php líneas 260-340)**](C:\Users\thebe\Pictures\Screenshots\Captura%20de%20pantalla%202025-05-20%20192715.png)
 
-![](C:\Users\thebe\AppData\Roaming\marktext\images\2025-05-20-19-28-27-image.png)
 
 ---
 
@@ -61,7 +56,6 @@ El administrador accede con credenciales fijas y puede:
 
 Los productos se pueden añadir, editar y eliminar desde el panel de administración. Se valida que los datos sean correctos y que la referencia no exista previamente.
 
-![**CAPTURA DE PANTALLA: LISTADO DE PRODUCTOS Y FORMULARIO DE AÑADIR (index.php líneas 260-300)**](C:\Users\thebe\Pictures\Screenshots\Captura%20de%20pantalla%202025-05-20%20192932.png)
 
 ---
 
@@ -69,7 +63,6 @@ Los productos se pueden añadir, editar y eliminar desde el panel de administrac
 
 El administrador puede ver todos los usuarios y eliminarlos. Al eliminar un usuario, se eliminan también sus compras y datos asociados.
 
-![**CAPTURA DE PANTALLA: LISTADO DE USUARIOS (index.php líneas 302-340)**](C:\Users\thebe\Pictures\Screenshots\Captura%20de%20pantalla%202025-05-20%20193034.png)
 
 ---
 
@@ -77,8 +70,6 @@ El administrador puede ver todos los usuarios y eliminarlos. Al eliminar un usua
 
 Los usuarios pueden ver los productos, añadirlos al carrito y realizar compras. El carrito se almacena en la sesión y al finalizar la compra se registra en la base de datos.
 
-![**CAPTURA DE PANTALLA: VISTA DE TIENDA (index.php líneas 148-164)**](C:\Users\thebe\Pictures\Screenshots\Captura%20de%20pantalla%202025-05-20%20193104.png)  
-![**CAPTURA DE PANTALLA: VISTA DE CARRITO (index.php líneas 166-180)**](C:\Users\thebe\Pictures\Screenshots\Captura%20de%20pantalla%202025-05-20%20193146.png)
 
 ---
 
